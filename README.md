@@ -5,7 +5,7 @@ peep them branches, yo 👀
 ### Frameworks
 
 - [X] fastify
-- [ ] hapi
+- [X] hapi
 - [ ] choo
 - [ ] find-my-way
 - [ ] ejs
