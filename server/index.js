@@ -14,6 +14,7 @@ exports.listen = (port) => {
     method: 'GET',
     path: '/{name}',
     handler: function (request, reply) {
+      // encodeURIComponent prevents content injection attacks
       reply(`Hello, ${encodeURIComponent(request.params.name)}!\n`);
     }
   });
