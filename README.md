@@ -7,6 +7,7 @@ peep them branches, yo 👀
 - [X] fastify
 - [X] hapi
 - [ ] choo
+- [ ] node
 - [ ] find-my-way
 - [ ] ejs
 - [ ] react
