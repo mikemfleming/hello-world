@@ -23,7 +23,7 @@ function mainView (state, emit) {
 }
 
 function titleStore(state, emitter) {
-  state.title = 'Hello new favorite frameworks!';
+  state.title = 'Hello new favorite frameworks! o.O';
   emitter.on('DOMContentLoaded', function () {
     emitter.on('update', function (newTitle) {
       state.title = newTitle;

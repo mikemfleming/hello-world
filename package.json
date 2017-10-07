@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "watch": "watchify client/index.js -o app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
