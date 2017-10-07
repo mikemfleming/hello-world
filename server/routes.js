@@ -8,7 +8,7 @@ module.exports = function (fastify, options, next) {
   });
 
   fastify.get('/app.js', function (req, reply) {
-    const stream = fs.createReadStream(path.join(__dirname, '../client/index.js'));
+    const stream = fs.createReadStream(path.join(__dirname, '../app.js'));
     reply.type('javascript').send(stream);
   });
 

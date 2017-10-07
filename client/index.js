@@ -10,18 +10,20 @@ app.route('/', mainView);
 app.mount('body');
 
 function mainView (state, emit) {
-  return html`<body>
-                  <h1>${state.title}</h1>
-                  <input type="text" value="${state.title}" oninput=""${update} />
-              </body>`;
-}
+  return html`
+            <body>
+                <h1>${state.title}</h1>
+                <input type="text" value="${state.title}" oninput=${update} />
+            </body>
+        `;
 
-function update (e) {
-  emit('update', e.target.value);
+  function update (e) {
+    emit('update', e.target.value);
+  }
 }
 
 function titleStore(state, emitter) {
-  state.title = 'Not quite set yet';
+  state.title = 'Hello new favorite frameworks!';
   emitter.on('DOMContentLoaded', function () {
     emitter.on('update', function (newTitle) {
       state.title = newTitle;
