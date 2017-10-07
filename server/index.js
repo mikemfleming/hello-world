@@ -1,1 +1,4 @@
-// insert backend here
+'use strict';
+
+const fastify = require('fastify');
+
