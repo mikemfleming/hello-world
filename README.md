@@ -8,7 +8,7 @@ peep them branches, yo 👀
 - [X] hapi
 - [ ] choo
 - [ ] node
-- [ ] find-my-way
+- [X] find-my-way
 - [ ] ejs
 - [ ] react
 - [ ] angular
