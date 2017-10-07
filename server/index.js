@@ -20,6 +20,6 @@ exports.listen = function (port) {
 
   fastify.listen(port, function (err) {
     if (err) throw err;
-    console.log(`server listening on ${fastify.server.address().port}`);
+    console.log(`fastify listening on ${fastify.server.address().port}`);
   });
 };
