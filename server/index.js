@@ -3,29 +3,22 @@
 // create a new app
 const fastify = require('fastify')();
 
-exports.listen = (port) => {
-  // use json schema (ajv) to speed up serialization of app's output
-  const schema = {
-    schema: {
-      response: {
-        200: {
-          type: 'object',
-          properties: {
-            hello: {
-              type: 'string'
-            }
-          }
-        }
-      }
-    }
+exports.listen = function (port) {
+
+  const options = {
+    something: true,
   };
 
-  // declare a route with an output schema
-  fastify.get('/', schema, (req, reply) => {
-    reply.send({ hello: 'world' });
+  // register multiple routes (fastify uses them like middleware)
+  fastify.register([
+      require('./route'),
+      require('./another-route'),
+      require('./yet-another-route'),
+  ], options, function (err) {
+    if (err) throw err;
   });
 
-  fastify.listen(port, (err) => {
+  fastify.listen(port, function (err) {
     if (err) throw err;
     console.log(`server listening on ${fastify.server.address().port}`);
   });
