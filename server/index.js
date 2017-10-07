@@ -11,7 +11,7 @@ exports.listen = function (port) {
 
   // register multiple routes (fastify uses them like middleware)
   fastify.register([
-    require('./route'),
+    require('./routes'),
   ], options, function (err) {
     if (err) throw err;
   });
