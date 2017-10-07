@@ -1,8 +1,10 @@
 'use strict';
 
+// create a new app
 const fastify = require('fastify')();
 
 exports.listen = (port) => {
+  // use json schema (ajv) to speed up serialization of app's output
   const schema = {
     schema: {
       response: {
@@ -18,6 +20,7 @@ exports.listen = (port) => {
     }
   };
 
+  // declare a route with an output schema
   fastify.get('/', schema, (req, reply) => {
     reply.send({ hello: 'world' });
   });
