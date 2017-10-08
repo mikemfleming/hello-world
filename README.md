@@ -2,13 +2,14 @@
 
 peep them branches, yo 👀
 
-### Frameworks
-
+### Backend Frameworks
 - [X] fastify
 - [X] hapi
-- [X] choo
-- [X] node
 - [X] find-my-way
+- [X] node
+
+### Frontend Frameworks
+- [X] choo
 - [ ] ejs
 - [ ] react
 - [ ] angular
