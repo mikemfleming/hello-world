@@ -4,7 +4,6 @@ const http = require('http');
 
 exports.listen = function (port) {
   const server = http.createServer(function (req, res) {
-    console.log(typeof res)
     res.end('{ "hello": "world" }\n');
   });
 
