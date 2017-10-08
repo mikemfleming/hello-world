@@ -16,7 +16,7 @@ function mainView (state, emit) {
                 <h1>${state.title}</h1>
                 <input type="text" value="${state.title}" oninput=${update} />
                 <h1>count is ${state.count}</h1>
-                 <button onclick=${increment}>Increment</button>
+                <button onclick=${increment}>Increment</button>
             </body>
         `;
 
