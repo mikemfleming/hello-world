@@ -1,17 +1,10 @@
-# Hello World in various framework combinations
+# HAPI
 
-peep them branches, yo 👀
-
-### Frameworks
-
-- [X] fastify
-- [X] hapi
-- [ ] choo
-- [ ] find-my-way
-- [ ] ejs
-- [ ] react
-- [ ] angular
-- [ ] vue
-- [ ] redux
-- [ ] mithril
-- [ ] backbone
+- Prefers configurization of customization
+- Authentication and authorization are built in.
+- "Battle tested"
+- Uses plugins
+- High level of abstraction away from HTTP req/res
+- Detailed error messaging (uses Boom)
+- Easier to test ( server.inject(actual, expected) )
+- Reply as a function instead of a method on req/res
